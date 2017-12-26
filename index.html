@@ -2,62 +2,90 @@
 <html>
 <head>
 	<title> Crystal Collector Game </title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
 <body> 
 
-	<div class="container">
+<div class="container">
 
-	<div class="jumbotron bg-primary text-center" id="header">
+	<div class="text-center" id="header">
 		<h1>Weclome to Crystal Collector Game!</h1>
 	</div>
 
 	<div class="row">
-
-		<div class="col-sm-6" id="instructions">
-			<div class="panel-heading">Let's Play!</div>
-			<div class="panel=body">
+		<div class="col-sm-6">
+			<div class="panel-heading text-center">Let's Play!</div>
+			<div class="panel-body">
 
 				<p>
+					You will be given a random number at the start of the game. To win, you must:
 
-					You will be given a random number at the start of the game.
+					<li>
 
-					<br><br>
+						Each crystal has a value. You must click a crystal to add a specific amount of points to your total score.
 
-					There are four crystals bellow. By clicking on a crystal you will add a specific smount of points to your total score.
+					</li>
 
-					<br><br>
+					<li>
 
-					You win the game by matching your total score to random number, you lose the game if your total score goes aboive the random number. 
+						You win the game by matching your total score to random number, you lose the game if your total score goes aboive the random number. 
 
-					<br><br>
+					</li>
 
-					The value of each crystal is hidden from you until click on it. 
+					<li>
 
-					<br><br>
+						Each time when the game starts, the game will change the value of each crystal
 
-					Each time when the game starts, the game will change the value of each crystal
+					</li>
 
 				</p>
 			</div>
 		</div>
 
-		<div class="col-sm-6 text-center" id="crystals">
-					<img class="img-responsive" id="red" src="./assets/images/redcrystal.jpg">
-					<img class="img-responsive" id="blue" src="./assets/images/bluecrystal.jpg">
-					<img class="img-responsive" id="oragne" src="./assets/images/orangecrystal.jpg">
-					<img class="img-responsive" id="green" src="./assets/images/greencrystal.jpg">
+		<div class="col-sm-6">
+		<div class="row" id="crystals"> 
+			<div class="col-sm-3">
+				<img class="img-responsive" id="red" src="./assets/images/redcrystal.jpg">
+			</div>
+			<div class="col-sm-3">
+				<img class="img-responsive" id="blue" src="./assets/images/bluecrystal.jpg">
+			</div>
+			<div class="col-sm-3">
+				<img class="img-responsive" id="purple" src="./assets/images/purplecrystal.jpg">
+			</div>
+			<div class="col-sm-3">
+				<img class="img-responsive" id="green" src="./assets/images/greencrystal.jpg">
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="toGet">
+			<h2> Number to Get: <span id="totalNumber"></span></h2>
+		</div>
+		</div>
+
+		<div class="row">
+		<div id="userScore">
+			<h2> You're total score is <span id="totalScore"></span> !</h2>
+		</div>
+		</div>
 		</div>
 	</div>
 
-	<div class="row">
+		<div class="row" id="score">
+			<div class="col-sm-6" id="userWin">
+				<h3> Win: <span id="totalWin"></span></h3>
+			</div>
+		<div class="col-sm-6" id="userLoss">
+				<h3> Losses: <span id="totalLoss"></span> </h3>
+			</div>
+		</div>
 
-		<div class="col-sm-6" id="game">
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
 
-	</div>
-</div>
 </body>
 </html>
 

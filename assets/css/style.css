@@ -1,7 +1,42 @@
 body {
+	background: url(../images/background.png);
+
+}
+
+#header {
+	font-family: Georgia;
+	color: black;
+	padding: 30px;
+
+}
+
+.panel-heading {
+	font-family: Georgia;
+	font-size: 30px;
+	color: black;
+}
+
+.panel-body {
+	font-family: Georgia;
+	font-size: 20px;
+	line-height: 30px;
+	color: black;
+}
+
+#crystals {
+	margin: 0 auto;
+	background-color: white;
+	padding: 20px;
 }
 
 .img-responsive {
 	height: 100px;
 	width: 100px;
 }
+
+#userWin, #userLoss, #toGet, #userScore {
+	color: black;
+	font-family: Georgia;
+	text-align: center;
+}
+
