@@ -1,6 +1,6 @@
 # Crystals Game
 
-------
+
 
 ## How to play the game:
 
@@ -12,4 +12,4 @@
 
 ![Alt text](./assets/images/picture.jpg)
 
-![Play the game here!](https://divyaayikkara9497.github.io/week-4-game/)
+[Play the game here!](https://divyaayikkara9497.github.io/week-4-game/)
