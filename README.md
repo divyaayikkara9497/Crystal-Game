@@ -12,4 +12,4 @@ To win, you must:
 
 ![Alt text](./assets/images/picture.jpg)
 
-[Play the game here!](https://divyaayikkara9497.github.io/week-4-game/)
+[Play the game here!](https://divyaayikkara9497.github.io/Crystal-Game/)
